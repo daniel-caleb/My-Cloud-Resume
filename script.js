@@ -1,26 +1,15 @@
-const apiUrl = 'https://74an5y1o1j.execute-api.us-west-2.amazonaws.com/prod/visitor-count';
+document.getElementById("pdf").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevents the default link behavior
+    window.print(); // Triggers the print dialog
+});
 
+
+const counter = document.querySelector(".counter-number");
 async function getVisitorCount() {
-    try {
-        const response = await fetch(apiUrl);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        console.log(data); // Log the data to inspect the API response
-        
-        if (data && data.count !== undefined) {
-            document.getElementById('visitor-count').textContent = data.count;
-        } else {
-            throw new Error('Invalid data format');
-        }
-    } catch (error) {
-        console.error('Error fetching visitor count:', error);
-        document.getElementById('visitor-count').textContent = 'Error loading count';
-    }
+    let response = await fetch ("https://r5l4eofrvtrd2fu4zvfcsvl76q0olulu.lambda-url.us-west-2.on.aws/");
+    let data = await response.json();
+    counter.innerHTML = `Number of Visitors: ${data}`;
 }
 
-// Fetch and display visitor count on page load
 getVisitorCount();
+
