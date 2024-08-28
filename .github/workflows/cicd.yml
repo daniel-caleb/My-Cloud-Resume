@@ -1,4 +1,4 @@
-name: Changes to Resume Website
+name: Track Changes to Resume Website
 
 on:
   workflow_dispatch:
