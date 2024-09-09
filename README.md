@@ -7,7 +7,7 @@ What is Cloud Resume Challenge? - [The Cloud Resume Challenge](https://cloudresu
 
 ## Architecture
 
-[AWS Architecture](aws-architecture-cloud-resume.png)
+![AWS Architecture](aws-architecture-cloud-resume.png)
 
 **Services Used**:
 
@@ -23,6 +23,8 @@ What is Cloud Resume Challenge? - [The Cloud Resume Challenge](https://cloudresu
 
 - Twitter: [@marissacaleb0](https://twitter.com/marissacaleb0)
 - LinkedIn: [daniel-caleb](https://www.linkedin.com/in/daniel-caleb-cheruiyot/)
+
+## [Blog Post 🖆](https://blog-daniel-caleb.hashnode.dev/my-cloud-resume-challenge-a-journey-from-zero-to-hero)
 
 ## License
 
