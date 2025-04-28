@@ -15,7 +15,7 @@ What is Cloud Resume Challenge? - [The Cloud Resume Challenge](https://cloudresu
 - AWS Lambda
 - Dynamo DB
 - GitHub Actions
-- Terraform
+- Terraform (To be implemented)
 
 ## [Live Demo 🔗](http://resume.daniel.s3-website-us-west-2.amazonaws.com)
 
